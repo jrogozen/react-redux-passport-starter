@@ -4,16 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run server & npm run client",
+    "server": "nodemon server",
+    "client": "webpack && node webpack.server.js"
   },
   "author": "jon rogozen",
   "license": "mit",
   "dependencies": {
     "babel": "^5.8.23",
+    "cors": "^2.7.1",
     "express": "^4.13.3",
     "qs": "^5.0.0",
     "react": "^0.13.3",
     "react-redux": "^2.1.1",
+    "react-router": "v1.0.0-beta3",
     "redux": "^2.0.0",
     "redux-thunk": "^0.1.0",
     "serve-static": "^1.10.0"
